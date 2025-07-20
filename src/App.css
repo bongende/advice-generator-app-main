@@ -33,8 +33,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
-  transition : 0.2s ease-in-out;
-
+  transition: 0.2s ease-in-out;
 }
 
 html {
@@ -75,7 +74,6 @@ body {
   text-align: center;
   max-width: 100%;
   color: var(--ligt-cyan);
-
 }
 
 .separator {
@@ -108,13 +106,16 @@ body {
   box-shadow: 0 0 1rem var(--neon-green);
 }
 
+.change-advice-btn:active {
+  padding: 0.5rem;
+}
+
 .attribution {
   font-size: 0.5rem;
   text-align: center;
   position: absolute;
-  bottom : 2vh;
+  bottom: 2vh;
   color: var(--ligt-cyan);
-
 }
 .attribution a {
   color: var(--neon-green);

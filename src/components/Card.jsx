@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-const fetchAdvice = () =>
-  fetch("https://api.adviceslip.com/advice")
-    .then((res) => res.json())
-    .then((qt) => qt);
-
 const Card = () => {
   const [advice, setAdvice] = useState({});
 
-  useEffect(() => {
-    fetchAdvice().then((res) => {
-      setAdvice(res.slip);
-      console.log(res.slip);
-    });
-  }, []);
+  const fetchAdvice = () => {
+    fetch("https://api.adviceslip.com/advice")
+      .then((res) => res.json())
+      .then((res) => {
+        setAdvice(res.slip);
+      });
+  };
+
+  useEffect(fetchAdvice, []);
 
   return (
     <article className="advice-container" aria-label="card content">
@@ -28,7 +26,13 @@ const Card = () => {
         src="../../public/images/pattern-divider-desktop.svg"
         class="separator"
       />
-      <button className="change-advice-btn">
+      <button
+        className="change-advice-btn"
+        onClick={(e) => {
+          e.preventDefault();
+          fetchAdvice();
+        }}
+      >
         <img alt="change advice" src="../../public/images/icon-dice.svg" />
       </button>
     </article>
