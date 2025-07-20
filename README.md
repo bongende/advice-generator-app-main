@@ -28,6 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
+![](./public/Screenshot_20250720_053233_Chrome.jpg)
+![](./public/Capture%20d'écran%202025-07-20%20053850.png)
 
 ### Links
 
