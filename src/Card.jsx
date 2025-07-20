@@ -23,7 +23,7 @@ const Card = () => {
       </q>
       <img
         alt="separator"
-        src="../public/images/pattern-divider-desktop.svg"
+        src="../images/pattern-divider-desktop.svg"
         class="separator"
       />
       <button
@@ -33,7 +33,7 @@ const Card = () => {
           fetchAdvice();
         }}
       >
-        <img alt="change advice" src="../public/images/icon-dice.svg" />
+        <img alt="change advice" src="../images/icon-dice.svg" />
       </button>
     </article>
   );
