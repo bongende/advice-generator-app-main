@@ -16,13 +16,22 @@ const Card = () => {
   }, []);
 
   return (
-    <div className="advice-container">
-      <p className="advice-id">ADVICE # {advice.id}</p>
-      <p className="advice-text">"{advice.advice}"</p>
+    <article className="advice-container" aria-label="card content">
+      <p className="advice-id" aria-label="advice id">
+        ADVICE # {advice.id}
+      </p>
+      <q className="advice-text" aria-label="advice">
+        {advice.advice}
+      </q>
+      <img
+        alt="separator"
+        src="../../public/images/pattern-divider-desktop.svg"
+        class="separator"
+      />
       <button className="change-advice-btn">
-        <img src="../../public/images/icon-dice.svg" />
+        <img alt="change advice" src="../../public/images/icon-dice.svg" />
       </button>
-    </div>
+    </article>
   );
 };
 
