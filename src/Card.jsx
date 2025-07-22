@@ -15,7 +15,7 @@ const Card = () => {
 
   return (
     <article className="advice-container" aria-label="card content">
-      <p className="advice-id" ">
+      <p className="advice-id">
         ADVICE # {advice.id}
       </p>
       <q className="advice-text">
