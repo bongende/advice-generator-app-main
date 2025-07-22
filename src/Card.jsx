@@ -15,7 +15,7 @@ const Card = () => {
 
   return (
     <article className="advice-container" aria-label="card content">
-      <p className="advice-id" aria-label="advice id">
+      <p className="advice-id" ">
         ADVICE # {advice.id}
       </p>
       <q className="advice-text">
@@ -24,7 +24,7 @@ const Card = () => {
       <img
         alt="separator"
         src="../images/pattern-divider-desktop.svg"
-        class="separator"
+        className="separator"
       />
       <button
         className="change-advice-btn"
