@@ -18,7 +18,7 @@ const Card = () => {
       <p className="advice-id" aria-label="advice id">
         ADVICE # {advice.id}
       </p>
-      <q className="advice-text" aria-label="advice">
+      <q className="advice-text">
         {advice.advice}
       </q>
       <img
@@ -28,6 +28,7 @@ const Card = () => {
       />
       <button
         className="change-advice-btn"
+        type="button"
         onClick={(e) => {
           e.preventDefault();
           fetchAdvice();
